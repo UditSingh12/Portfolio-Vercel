@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0f;
+  --color-surface: #121217;
+  --color-border: #27272a;
+  --color-primary: #ffffff;
+  --color-secondary: #a1a1aa;
+  
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    -webkit-font-smoothing: antialiased;
+    cursor: default;
+  }
+}
+
+/* Hide scrollbar for marquee but allow scrolling if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 3D Flip Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-33.333%); }
+}
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+.pause-marquee {
+  animation-play-state: paused !important;
+}
+
+/* Animated Grid Background */
+.animated-grid {
+  background-image: 
+    linear-gradient(to right, rgba(39, 39, 42, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(39, 39, 42, 0.4) 1px, transparent 1px);
+  background-size: 50px 50px;
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* Mouse Glow Effect */
+#mouse-glow {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(120,180,255,0.012) 0%, transparent 60%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
