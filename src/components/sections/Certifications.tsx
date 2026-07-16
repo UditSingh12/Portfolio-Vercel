@@ -5,7 +5,7 @@ const certs = [
   { id: 1, issuer: "IBM", title: "Python for Data Science, AI & Development", link: "certificates/IBM%20DATA%20SCIENCE%201.pdf", hex: "0x00A1" },
   { id: 2, issuer: "IBM", title: "Exploratory Data Analysis for Machine Learning", link: "certificates/IBM%20DATA%20SCIENCE%202.pdf", hex: "0x00A2" },
   { id: 3, issuer: "Coursera", title: "Artificial Intelligence", link: "certificates/AI%20Certifcate.pdf", hex: "0x00A3" },
-  { id: 4, issuer: "Coursera", title: "Automata Theory", link: "certificates/Automata%20Cerificate.pdf", hex: "0x00A4" },
+  { id: 4, issuer: "Coursera", title: "Automata Theory and computability", link: "certificates/Automata%20Cerificate.pdf", hex: "0x00A4" },
   { id: 5, issuer: "Google", title: "The Bits and Bytes of Computer Networking", link: "certificates/CN_BitsAndBytes.pdf", hex: "0x00B1" },
   { id: 6, issuer: "Coursera", title: "C++ Programming", link: "certificates/Coursera%20cpp.pdf", hex: "0x00C1" },
   { id: 7, issuer: "Coursera", title: "Simulation and Modeling of Natural Processes", link: "certificates/E22CSEU0942_EB32_%20Couirsera%20Certificate.pdf", hex: "0x00D1" },
