@@ -90,6 +90,7 @@ export default function Contact() {
             type="submit" 
             disabled={isSubmitting || isSuccess}
             className="flex items-center justify-center gap-2 w-full py-4 bg-white text-background rounded-lg font-bold hover:bg-white/90 transition-all mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
+            data-stamp="SENT"
           >
             {isSubmitting ? (
               <>
