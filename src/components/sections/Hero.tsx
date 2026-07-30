@@ -45,12 +45,12 @@ export default function Hero({ isUnlocked, setUnlocked }: HeroProps) {
 
           <div className="flex items-center gap-4 pt-4">
             <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.05} transitionSpeed={2500}>
-              <a href="https://drive.google.com/file/d/1TYbvznC8gMHQOAscGm0fg9CSRgeD2MX2/view" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-full bg-white text-background font-semibold hover:bg-white/90 transition-colors inline-block">
+              <a href="https://drive.google.com/file/d/1TYbvznC8gMHQOAscGm0fg9CSRgeD2MX2/view" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-full bg-white text-background font-semibold hover:bg-white/90 transition-colors inline-block" data-stamp="SEEN">
                 Download CV
               </a>
             </Tilt>
             <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.05} transitionSpeed={2500}>
-              <a href="#contact" className="px-8 py-3 rounded-full border border-border text-white font-semibold hover:bg-white hover:text-background transition-all inline-block">
+              <a href="#contact" className="px-8 py-3 rounded-full border border-border text-white font-semibold hover:bg-white hover:text-background transition-all inline-block" data-stamp="SEEN">
                 Say Hello
               </a>
             </Tilt>
@@ -58,13 +58,13 @@ export default function Hero({ isUnlocked, setUnlocked }: HeroProps) {
 
           {/* Tiny Links */}
           <div className="flex flex-wrap items-center gap-6 pt-12 text-sm text-secondary font-mono">
-            <a href="https://github.com/UditSingh12" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+            <a href="https://github.com/UditSingh12" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors" data-stamp="CONNECTED">
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> GitHub ↗
             </a>
-            <a href="https://www.linkedin.com/in/udit-pratap-singh-04737a25a/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/udit-pratap-singh-04737a25a/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors" data-stamp="CONNECTED">
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn ↗
             </a>
-            <a href="https://leetcode.com/u/Udit_Singh04/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+            <a href="https://leetcode.com/u/Udit_Singh04/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors" data-stamp="CONNECTED">
               <Code2 className="w-4 h-4" /> LeetCode ↗
             </a>
           </div>
@@ -86,6 +86,7 @@ export default function Hero({ isUnlocked, setUnlocked }: HeroProps) {
                       ? 'border-green-500/50 shadow-[0_0_80px_rgba(34,197,94,0.3)]' 
                       : 'border-white/5 hover:shadow-[0_0_60px_rgba(220,38,38,0.25)] hover:border-red-500/20'
                     }`}
+                  data-stamp="INITIALIZED"
                 >
                   {systemState === 'ACCESS_GRANTED' ? (
                     <Unlock className="w-16 h-16 text-green-500 mb-4 animate-pulse" />
