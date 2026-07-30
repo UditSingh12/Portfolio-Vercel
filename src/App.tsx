@@ -1,4 +1,4 @@
-import MouseTracker from './components/MouseTracker';
+import QuantumCursor from './components/QuantumCursor';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Skills from './components/sections/Skills';
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="relative min-h-screen text-primary selection:bg-white selection:text-black">
-      <MouseTracker />
+      <QuantumCursor />
 
       {/* Navigation - minimalist sticky top */}
       {isUnlocked && (
@@ -46,6 +46,7 @@ function App() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.7 + i * 0.1, duration: 0.5 }}
                 className="hover:text-primary transition-colors"
+                data-stamp="SEEN"
               >
                 {item}
               </motion.a>
@@ -58,6 +59,7 @@ function App() {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 1.2, type: "spring", stiffness: 200 }}
               className="px-4 py-2 bg-white text-background rounded-full font-medium hover:scale-105 transition-transform"
+              data-stamp="SEEN"
             >
               Resume ↗
             </motion.a>
