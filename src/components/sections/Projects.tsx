@@ -126,6 +126,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
                     ? 'bg-red-600 border-red-500 text-white shadow-[0_0_20px_rgba(220,38,38,0.5)] hover:bg-red-500 hover:border-red-400 hover:-translate-y-1 hover:shadow-[0_5px_25px_rgba(220,38,38,0.7)]' 
                     : 'bg-transparent border-white/10 text-secondary hover:border-white/30 hover:text-white'
                 }`}
+                data-stamp="REVIEWED"
               >
                 <ExternalLink className="w-4 h-4" />
                 <span>Live Demo</span>
@@ -141,6 +142,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
                     ? 'bg-white/5 border-white/20 text-white shadow-[0_0_15px_rgba(255,255,255,0.05)] hover:bg-white/10 hover:border-white/40 hover:-translate-y-1 hover:shadow-[0_5px_20px_rgba(255,255,255,0.15)]' 
                     : 'bg-transparent border-transparent text-secondary hover:border-white/10 hover:bg-white/5 hover:text-white'
                 }`}
+                data-stamp="REVIEWED"
               >
                 <GitBranch className="w-4 h-4" />
                 <span>Source Code</span>
